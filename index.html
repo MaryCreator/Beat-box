@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beatbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="note.png" alt="Логотип ноты">
+      <h1>Beatbox</h1>
+    </div>
+    <p>Добро пожаловать на Beatbox — ваш портал музыкальных жанров!</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Искать музыку или жанр..." oninput="filterTracks()">
+    </section>
+
+    <section class="genres">
+      <h2>Жанры музыки</h2>
+      <ul>
+        <li>Поп</li>
+        <li>Рок</li>
+        <li>Хип-хоп</li>
+        <li>Классика</li>
+        <li>Джаз</li>
+        <li>Электронная музыка</li>
+      </ul>
+    </section>
+
+    <section class="tracks">
+      <h2>Аудиодорожки</h2>
+      <div id="track-list">
+        <div class="track">
+          <p>Трек 1 - Поп</p>
+          <audio controls>
+            <source src="pop-song.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+        </div>
+        <div class="track">
+          <p>Трек 2 - Рок</p>
+          <audio controls>
+            <source src="rock-song.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+        </div>
+        <div class="track">
+          <p>Трек 3 - Джаз</p>
+          <audio controls>
+            <source src="jazz-song.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Beatbox. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
